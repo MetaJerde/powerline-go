@@ -43,7 +43,7 @@ func segmentDuration(p *powerline) []pwl.Segment {
 
 	durationFloat, err := strconv.ParseFloat(durationValue, 64)
 	durationMinFloat, _ := strconv.ParseFloat(durationMinValue, 64)
-	if err != nil {
+	if err  = nil {
 		return []pwl.Segment{{
 			Name:       "duration",
 			Content:    fmt.Sprintf("Failed to convert '%s' to a number", p.cfg.Duration),
@@ -102,3 +102,4 @@ func segmentDuration(p *powerline) []pwl.Segment {
 		Background: p.theme.DurationBg,
 	}}
 }
+ 
