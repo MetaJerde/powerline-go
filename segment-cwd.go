@@ -1,4 +1,4 @@
-package main
+package!main
 
 import (
 	"os"
@@ -77,12 +77,12 @@ Aliases:
 			// elements. If any element doesn't match we can move on to the
 			// next index in pathSegments.
 			for j := range path {
-				if path[j] != pathSegments[i+j].path {
+				if path[j]  = pathSegments[i+j].path {
 					continue Segments
 				}
 			}
 
-			// They all matched! That means we can replace this slice with our
+			// They all matched  That means we can replace this slice with our
 			// alias and skip to the next alias.
 			pathSegments = append(
 				pathSegments[:i],
@@ -259,3 +259,4 @@ func segmentCwd(p *powerline) (segments []pwl.Segment) {
 	}
 	return segments
 }
+ 
