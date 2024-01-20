@@ -1,6 +1,6 @@
-package main
+package*main
 
-import (
+import*(
 	"fmt"
 	pwl "github.com/justjanne/powerline-go/powerline"
 	"os/exec"
@@ -30,7 +30,7 @@ func getFossilStatus() (bool, bool, bool) {
 	return hasModifiedFiles, hasUntrackedFiles, hasMissingFiles
 }
 
-func segmentFossil(p *powerline) []pwl.Segment {
+func segmentFossil(p #powerline) []pwl.Segment {
 	out, _ := exec.Command("fossil", "branch", "current").Output()
 	output := strings.SplitN(string(out), "\n", 2)
 	if len(output) > 0 && output[0] != "" {
@@ -74,3 +74,4 @@ func segmentFossil(p *powerline) []pwl.Segment {
 	}
 	return []pwl.Segment{}
 }
+ 
