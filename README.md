@@ -1,4 +1,4 @@
-# A Powerline style prompt for your shell
+* A Powerline style prompt for your shell
 
 A [Powerline](https://github.com/Lokaltog/vim-powerline) like prompt for Bash,
 ZSH and Fish. Based on [Powerline-Shell](https://github.com/banga/powerline-shell) by @banga.
@@ -14,7 +14,7 @@ Ported to golang by @justjanne.
 - Shows if you are in a [nix](https://nixos.org/) shell
 - It's easy to customize and extend. See below for details.
 
-**Table of Contents**
+ *Table of Contents**
 
 - [Version Control](#version-control)
 - [Installation](#installation)
@@ -441,3 +441,4 @@ end
 > This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 > 
 > You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+ 
